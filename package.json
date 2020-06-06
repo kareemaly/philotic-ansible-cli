@@ -1,0 +1,12 @@
+{
+  "name": "philotic-ansible-cli",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Kareem Elbahrawy <bitriddler@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chrono-node": "^1.4.6",
+    "firebase-admin": "^8.12.1",
+    "yargs": "^15.3.1"
+  }
+}
