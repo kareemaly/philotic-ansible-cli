@@ -4,6 +4,10 @@
   "main": "src/index.js",
   "author": "Kareem Elbahrawy <bitriddler@gmail.com>",
   "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "philotic-ansible": "./src/index.js"
+  },
   "dependencies": {
     "chrono-node": "^1.4.6",
     "firebase-admin": "^8.12.1",

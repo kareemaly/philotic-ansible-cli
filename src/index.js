@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const path = require("path");
 const admin = require("firebase-admin");
 const argv = require("yargs").argv;
