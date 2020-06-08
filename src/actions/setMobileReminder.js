@@ -11,12 +11,14 @@ const strip = str => (str.startsWith("to ") ? str.replace("to ", "") : str);
 const setMobileReminder = (docRef, prefix, command) => {
   const strippedCommand = command.replace(prefix, "");
   const parsed = chrono.parse(strippedCommand);
-  const when = parsed[0].ref;
+  const when = chrono.parseDate(strippedCommand);
   const what = upperCaseFirst(
     strip(
       replaceToSecondPerson(strippedCommand.replace(parsed[0].text, "").trim())
     )
   );
+
+  console.log(`Setting a reminder on kareem's mobile at ${when}`);
 
   const action = {
     action: "ADD_NOTIFICATION_ON_MY_MOBILE",
