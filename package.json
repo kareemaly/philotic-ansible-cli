@@ -9,7 +9,7 @@
     "philotic-ansible": "./src/index.js"
   },
   "dependencies": {
-    "chrono-node": "^1.4.6",
+    "chrono-node": "^2.2.4",
     "firebase-admin": "^8.12.1",
     "yargs": "^15.3.1"
   }
